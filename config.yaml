@@ -2,4 +2,4 @@ input_data:
   file: "../data/raw/salaries.csv"
   
 output_data:
-  file: "../data/clean/salaries.csv"
+  file: "../data/clean/AI_ML_Salaries_clean.csv"
