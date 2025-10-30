@@ -5,6 +5,21 @@
 
 This project aims to look at the positives of AI and Machine Learning. This analysis wants to look at what medicating factors contribute to this high demand position.
 
+Why Show Interest?
+
+- The demand for AI talent is skyrocketing
+- Unlocking Insights from Data
+- Driving Innovation and Efficiency
+- Solving Global Challenges
+- Enhancing Human Capabilities
+
+Project Goal
+
+- Discuss Job Popularity
+- Discuss Position Growth
+- Discuss Highest Pay
+- Discuss Experience-level vs best pay
+- Discuss Company size vs best pay
 
 🧑‍⚕️ Project Hypothesis
 Under the umbrella of AI and Machine Learning, which job position is the most popular job to have? From 2020 to 2025, how has the most popular job position grown? Which of the jobs have the highest paying salary? What experience-level is needed to have the best pay? How big does the company have to be to have the best pay?
@@ -17,21 +32,21 @@ Author:Cedric Aubin
 
 GitHub Table Structure:
 
-Year: The year the salary was paid.
+- Year: The year the salary was paid.
 range:2020 - 2025
 
-Experience_level: The experience level in the job during the year with the following possible values:
+- Experience_level: The experience level in the job during the year with the following possible values:
 Entry-level
 Mid-level
 Senior-level 
 Executive-level
 
-Employment_type: The type of employement for the role:
+- Employment_type: The type of employement for the role:
 Part-time
 Full-time
 Contract
 
-Position: The role worked in during the year:
+- Position: The role worked in during the year:
 AI / ML Engineer / Developer
 Data Science, Engineers & Analytics
 Products, Research & Development
@@ -39,16 +54,16 @@ AI / ML Software Engineer
 AI / ML Computer Systems
 AI / ML Sales, Consultant & Prof. Services
 
-Currancy: The currency used in thr salary amount paid.
+- Currancy: The currency used in thr salary amount paid.
 USD
 
-Salary: The total gross salary amount paid.
+- Salary: The total gross salary amount paid.
 ranges from $16,000 to $750,000
 
-Country: The location of the job.
+- Country: The location of the job.
 US
 
-Remote_Amount: The percentage of the job location being remote or On-site.
+- Remote_Amount: The percentage of the job location being remote or On-site.
 0%, 50% or 100%
 
 
@@ -90,7 +105,6 @@ Job Rank                  Position             Mean Salary
 4                    AI / ML Computer Systems  $ 181678.86  
 5  AI / ML Sales, Consultant & Prof. Services  $ 163489.44  
 6         Data Science, Engineers & Analytics  $ 145727.63  
-             
 
 📊 Key Findings
 - Most job title in demand is  Data Science, Engineers & Analytics.
@@ -113,22 +127,25 @@ Tools: Jupyter Notebook,MS Excel, Tableau, SQL
 
 
 ├── data/
-│   ├── raw/            # Original dataset
-│   └── clean/          # Cleaned data
+│   ├── raw/           
+│   └── clean/          
 ├── notebooks/
-│   ├──AI_ML_Salaries_sorted_columns.csv # Excel column cleaning & renaming
-│   └── AI_ML_Salaries_v1.ipynb          # Pre-excel clean
-│   └── AI_ML_Salaries_v2.ipynb          # Exploratory data analysis
+│   ├──AI_ML_Salaries_sorted_columns.csv
+│   └── AI_ML_Salaries_v1.ipynb        
+│   └── AI_ML_Salaries_v2.ipynb         
 │   └── AI_ML_Salaries_stats_v3.ipynb
 │   └── AI_ML_Salaries_visuals_v4.ipynb
 ├── figures/
 │   ├── AI_ML_Presentation1.png
 │   ├── AI_ML_Presentation2.png
+│   ├── Positions_Dahboard.png
 │   └── AI_ML_Salaries_Tableau.twbx
-│   └── AI_ML_presentation.pdf
+│   └── Project_ERD.pdf
 ├── sql_scripts/
 │   ├── create_database.sql
-│   ├── query_database.sql
+│   ├── position_salary_exp_employ_query_database.sql
+│   ├── check_data.sql
+│   └── project.sql
 ├── pyproject.toml
 ├── config.yaml
 └── README.md

@@ -1,7 +1,3 @@
-CREATE DATABASE IF NOT EXISTS AI_ML_SALARIES;
-
-USE AI_ML_SALARIES;
-
 CREATE TABLE `job` (
   `job_id` integer PRIMARY KEY,
   `year` year,

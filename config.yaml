@@ -3,3 +3,13 @@ input_data:
   
 output_data:
   file: "../data/clean/AI_ML_Salaries_clean.csv"
+  file1: "../data/clean/experience.csv"
+  file2: "../data/clean/currency.csv"
+  file3: "../data/clean/company_size.csv"
+  file4: "../data/clean/employment_type.csv"
+  file5: "../data/clean/remote.csv"
+  file6: "../data/clean/positions.csv"
+  file7: "../data/clean/countries.csv"
+  file8: "../data/clean/year.csv"
+  file9: "../data/clean/salary.csv"
+  file10: "../data/clean/jobs.csv"
