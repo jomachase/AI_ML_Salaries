@@ -22,56 +22,63 @@ Project Goal
 - Discuss Company size vs best pay
 
 🧑‍⚕️ Project Hypothesis
-Under the umbrella of AI and Machine Learning, which job position is the most popular job to have? From 2020 to 2025, how has the most popular job position grown? Which of the jobs have the highest paying salary? What experience-level is needed to have the best pay? How big does the company have to be to have the best pay?
+Under the umbrella of AI and Machine Learning:
+1. Which job position is the most popular job to have?
+2. From 2020 to 2025, how has the most popular job position grown?
+3. Which of the jobs have the highest paying salary?
+4. What experience-level is needed to have the best pay?
+5. How big does the company have to be to have the best pay?
 
 🧾 Data Sources
 The dataset was retrieved from GitHub 
-Size: The original Dataset contained 73,148 rows and 11 columns. Once cleaned and renamed dataset became 65,877 rows and 9 rows. 
-Author:Cedric Aubin 
+
+- Size: The original Dataset contained 73,148 rows and 11 columns. Once cleaned and renamed dataset became 65,877 rows and 9 rows. 
+
+- Author:Cedric Aubin 
 
 
 GitHub Table Structure:
 
 - Year: The year the salary was paid.
-range:2020 - 2025
+> range:2020 - 2025
 
 - Experience_level: The experience level in the job during the year with the following possible values:
-Entry-level
-Mid-level
-Senior-level 
-Executive-level
+> Entry-level
+> Mid-level
+> Senior-level 
+> Executive-level
 
 - Employment_type: The type of employement for the role:
-Part-time
-Full-time
-Contract
+> Part-time
+> Full-time
+> Contract
 
 - Position: The role worked in during the year:
-AI / ML Engineer / Developer
-Data Science, Engineers & Analytics
-Products, Research & Development
-AI / ML Software Engineer
-AI / ML Computer Systems
-AI / ML Sales, Consultant & Prof. Services
+> AI / ML Engineer / Developer
+> Data Science, Engineers & Analytics
+> Products, Research & Development
+> AI / ML Software Engineer
+> AI / ML Computer Systems
+> AI / ML Sales, Consultant & Prof. Services
 
 - Currancy: The currency used in thr salary amount paid.
-USD
+> USD
 
 - Salary: The total gross salary amount paid.
-ranges from $16,000 to $750,000
+> ranges from $16,000 to $750,000
 
 - Country: The location of the job.
-US
+> US
 
 - Remote_Amount: The percentage of the job location being remote or On-site.
-0%, 50% or 100%
+> 0%, 50% or 100%
 
 
 Main Focus: Position, Experience_Level, Company_Size, Year and Salary (categorical & numerical)
 
 🧹 Data Preparation
 
-Dropped columns (salary, employee_residence ) to avoid duplicated data.
+* Dropped columns (salary, employee_residence ) to avoid duplicated data.
 Checked for missing values, outliers, and inconsistencies.
 Renamed job titles from 289 positions to 6 umbrella position to simplify analysis
 Renamed dataframe table to make table names and rows more readible.
@@ -79,32 +86,36 @@ Renamed dataframe table to make table names and rows more readible.
 🧮 Feature Stats to answer hypothesis:
 
 Counts for Position:
-Data Science, Engineers & Analytics           36290
-Products, Research & Development              11775
-AI / ML Software Engineer                      8684
-AI / ML Engineer / Developer                   7479
-AI / ML Sales, Consultant & Prof. Services     1120
-AI / ML Computer Systems                        529
+-------|------|-----      
+| Data Science, Engineers & Analytics          | 36290 |
+| Products, Research & Development             | 11775 |
+| AI / ML Software Engineer                    | 8684  |
+| AI / ML Engineer / Developer                 | 7479  |
+| AI / ML Sales, Consultant & Prof. Services   | 1120  |
+| AI / ML Computer Systems                     | 529   |
 
 Counts for Experience_Level:
-Experience_Level
-Senior Level        39552
-Mid Level           19280
-Entry Level          5661
-Executive Level      1384
+-------|------|-----   
+|Experience_Level   |       | 
+|Senior Level       | 39552 |
+|Mid Level          | 19280 | 
+|Entry Level        |  5661 |
+|Executive Level    |  1384 |
 
 Counts for Company_Size
-Medium    63740
-Large      2081
-Small        56
+-------|------|----- 
+|Medium | 63740     | 
+| Large |  2081     | 
+| Small |    56     | 
 
 Job Rank                  Position             Mean Salary
-1                AI / ML Engineer / Developer  $ 193610.27  
-2                   AI / ML Software Engineer  $ 189431.72 
-3            Products, Research & Development  $ 182090.09 
-4                    AI / ML Computer Systems  $ 181678.86  
-5  AI / ML Sales, Consultant & Prof. Services  $ 163489.44  
-6         Data Science, Engineers & Analytics  $ 145727.63  
+---------------------|----------------------|--------------- 
+|1|                AI / ML Engineer / Developer|  $ 193610.27|  
+|2|                   AI / ML Software Engineer|  $ 189431.72| 
+|3|            Products, Research & Development|  $ 182090.09| 
+|4|                    AI / ML Computer Systems|  $ 181678.86|  
+|5| AI / ML Sales, Consultant & Prof. Services |  $ 163489.44| 
+|6|         Data Science, Engineers & Analytics|  $ 145727.63|  
 
 📊 Key Findings
 - Most job title in demand is  Data Science, Engineers & Analytics.
@@ -113,14 +124,14 @@ Job Rank                  Position             Mean Salary
 - Medium sized companies pay the best.
 
 ⚠️ Challenges of Work:
--The dataset is extremely large and had no generalized job titles, which made classification difficult.
--Potential experience-level imbalance should be addressed cause it may reflect a disproportion for jobs.
--Need more Global information for analysis
--Need more state by state analysis for comparison
+- The dataset is extremely large and had no generalized job titles, which made classification difficult.
+- Potential experience-level imbalance should be addressed cause it may reflect a disproportion for jobs.
+- Need more Global information for analysis
+- Need more state by state analysis for comparison
 
 🧰 Tech Stack
 
-Tools: Jupyter Notebook,MS Excel, Tableau, SQL
+- Tools: Jupyter Notebook,MS Excel, Tableau, SQL
 
 
 📁 Github Structure
@@ -155,6 +166,5 @@ Tools: Jupyter Notebook,MS Excel, Tableau, SQL
 
 
 
-
-Dataset Location:https://www.kaggle.com/datasets/cedricaubin/ai-ml-salaries
-Tableau Dashboard: https://public.tableau.com/app/profile/joma.chase/viz/AI_ML_Salaries_Tableau/Donut-EL?publish=yes
+1. Dataset Location:https://www.kaggle.com/datasets/cedricaubin/ai-ml-salaries
+2. Tableau Dashboard: https://public.tableau.com/app/profile/joma.chase/viz/AI_ML_Salaries_Tableau/Donut-EL?publish=yes
